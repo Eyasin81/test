@@ -15,7 +15,7 @@ function InsertData(MyMongoClient){
     var MyData={name:"Abdul ALi",Roll:"334756",Reg:"34343"};
     MyCollection.insertOne(MyData,function(error){
         if(error){
-            console.log("Data Insert Fail")
+            console.log("Data Insert Fail")//Data Insert Fail 
         }else{
             console.log("Data Insert Success")
         }
