@@ -42,6 +42,7 @@ function DeleteOneItem(MyMongoClient){
         }
     })
 }
+// All Data Delete  
 function DeleteAllItem(MyMongoClient){
     const MyDataBase=MyMongoClient.db("school");
     const MyCollection=MyDataBase.collection('students');
