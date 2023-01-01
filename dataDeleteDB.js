@@ -9,10 +9,12 @@ if(err){
     console.log("Data Connection success")
     //Data Insert MongoDb
     // InsertData(MyMongoClient);
-    DeleteOneItem(MyMongoClient)
+    // DeleteOneItem(MyMongoClient)
+    dataUpdate(MyMongoClient);
 }
 })
 //Data Insert MongoDb
+
 // function InsertData(MyMongoClient){ 
 //     const MyDataBase=MyMongoClient.db("school");
 //     const MyCollection=MyDataBase.collection('students');
@@ -25,17 +27,23 @@ if(err){
 //         }
 //     })
     
+
 // }
 // Data Delete MongoDB 
-function DeleteOneItem(MyMongoClient){
+// function DeleteOneItem(MyMongoClient){
+//     const MyDataBase=MyMongoClient.db("school");
+//     const MyCollection=MyDataBase.collection('students');
+//     const DeleteItem={Roll:"334756"};
+//     MyCollection.deleteOne(DeleteItem,function(err){
+//         if(err){
+//             console.log("Data Delete Fail")
+//         }else{
+//             console.log("Data Delete Success")
+//         }
+//     })
+// }
+function dataUpdate(MyMongoClient){
     const MyDataBase=MyMongoClient.db("school");
-    const MyCollection=MyDataBase.collection('students');
-    const DeleteItem={Roll:"334756"};
-    MyCollection.deleteOne(DeleteItem,function(err){
-        if(err){
-            console.log("Data Delete Fail")
-        }else{
-            console.log("Data Delete Success")
-        }
-    })
+        const MyCollection=MyDataBase.collection('students');
+        
 }
